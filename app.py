@@ -2,7 +2,7 @@ import socket
 from time import sleep
 import logging as log
 import threading
-from BaseHTTPServer import HTTPServer
+from http.server import HTTPServer
 from flask import Flask, render_template, Response, request
 from prometheus_client import start_http_server, Summary, MetricsHandler, Counter, generate_latest
 
